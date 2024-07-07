@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/orangeCP"
+        android:text="@string/sauvegarder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_lb_rifleBulletName" />
+
+    <TextView
+        android:id="@+id/lb_bulletSpeed"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/rifle_speed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tf_bulletSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="940"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_bulletSpeed" />
+
+    <ToggleButton
+        android:id="@+id/toggle_bulletSpeedtUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="M/S"
+        android:textOn="F/S"
+        app:layout_constraintStart_toEndOf="@+id/tf_bulletSpeed"
+        app:layout_constraintTop_toTopOf="@+id/tf_bulletSpeed" />
+
+    <TextView
+        android:id="@+id/lb_bulletWeight"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rifle_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_bulletSpeed" />
+
+    <EditText
+        android:id="@+id/tf_bulletWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="11.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_bulletWeight" />
+
+    <ToggleButton
+        android:id="@+id/toggle_bulletWeightUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="G"
+        android:textOn="GR"
+        app:layout_constraintStart_toEndOf="@+id/tf_bulletWeight"
+        app:layout_constraintTop_toTopOf="@+id/tf_bulletWeight" />
+
+    <TextView
+        android:id="@+id/lb_bc"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rifle_bc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_bulletWeight" />
+
+    <EditText
+        android:id="@+id/tf_BC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_bc" />
+
+    <ToggleButton
+        android:id="@+id/toggle_bcUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="G1"
+        android:textOn="G7"
+        app:layout_constraintStart_toEndOf="@+id/tf_BC"
+        app:layout_constraintTop_toTopOf="@+id/tf_BC" />
+
+    <TextView
+        android:id="@+id/lb_rifleBulletName"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rifle_nameBullet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_BC" />
+
+    <EditText
+        android:id="@+id/tf_lb_rifleBulletName"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text|textCapWords"
+        android:text="SB 300wby - SPCE 180gr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_rifleBulletName" />
+
+    <Button
+        android:id="@+id/bt_quit"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blackCP"
+        android:text="@string/goToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>

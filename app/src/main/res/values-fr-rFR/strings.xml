@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BalistikCalculateur</string>
+    <string name="action_settings">Configuration</string>
+    <string name="first_fragment_label">Premier fragment</string>
+    <string name="second_fragment_label">Second fragment</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
+    <string name="lorem_ipsum">lorem ipsum</string>
+    <string name="menu_scopeSetting">Paramètres lunette</string>
+    <string name="menu_generalSetting">Paramètres généraux</string>
+    <string name="menu_rifleSetting">Paramètres arme</string>
+    <string name="menu_weatherSetting">Paramètres météo</string>
+    <string name="menu_donate">Faire un don</string>
+    <string name="menu_about">A propos</string>
+    <string name="scope_UD">Valeur clics tourelles haut/bas :</string>
+    <string name="scope_LR">Valeur clics tourelles gauche/droite :</string>
+    <string name="scope_height">Hauteur de la lunette :</string>
+    <string name="scope_zeroing">Distance point zéro :</string>
+    <string name="sauvegarder">Enregistrer</string>
+    <string name="goToHome">Retour</string>
+    <string name="weather_temp">Température :</string>
+    <string name="weather_humidity">Humidité relative :</string>
+    <string name="weather_pressure">Pression atmosphérique :</string>
+    <string name="rifle_speed">Vitesse initiale :</string>
+    <string name="rifle_weight">Poids de l\'ogive :</string>
+    <string name="rifle_nameBullet">Caractéristique de l\'ogive :</string>
+    <string name="rifle_bc">Coefficient balistique :</string>
+    <string name="speed_result">Unités de vitesse :</string>
+    <string name="distance_result">Unités de distance :</string>
+    <string name="measure_result">Unités de mesure :</string>
+    <string name="configIsSave">Les données ont été sauvegardées !</string>
+    <string name="erreurSaisieChamps">Il y a des errerus dans les champs !</string>
+    <string name="home_incrementation">Incrémentation distance :</string>
+    <string name="home_endDistance">Distance maximum :</string>
+    <string name="home_slopeWind">Angle du vent en degrés :</string>
+    <string name="home_windSpeed">Vitesse du vent :</string>
+    <string name="home_slopeAngle">Angle de tir en degrés :</string>
+    <string name="home_table">Tableau</string>
+    <string name="home_graph">Graphique</string>
+</resources>

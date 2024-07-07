@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/orangeCP"
+        android:text="@string/sauvegarder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_pressure" />
+
+    <TextView
+        android:id="@+id/lb_temperature"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/weather_temp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tf_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="17.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_temperature" />
+
+    <ToggleButton
+        android:id="@+id/toggle_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="°C"
+        android:textOn="°F"
+        app:layout_constraintStart_toEndOf="@+id/tf_temperature"
+        app:layout_constraintTop_toTopOf="@+id/tf_temperature" />
+
+    <TextView
+        android:id="@+id/lb_humidity"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/weather_humidity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_temperature" />
+
+    <EditText
+        android:id="@+id/tf_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_humidity" />
+
+    <ToggleButton
+        android:id="@+id/toggle_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="%"
+        android:textOn="%"
+        app:layout_constraintStart_toEndOf="@+id/tf_humidity"
+        app:layout_constraintTop_toTopOf="@+id/tf_humidity" />
+
+    <TextView
+        android:id="@+id/lb_altitude"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/weather_altitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_humidity" />
+
+    <EditText
+        android:id="@+id/tf_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_altitude" />
+
+    <ToggleButton
+        android:id="@+id/toggle_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="M"
+        android:textOn="FT"
+        app:layout_constraintStart_toEndOf="@+id/tf_altitude"
+        app:layout_constraintTop_toTopOf="@+id/tf_altitude" />
+
+    <TextView
+        android:id="@+id/lb_pressure"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/weather_pressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_altitude" />
+
+    <EditText
+        android:id="@+id/tf_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1013.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_pressure" />
+
+    <ToggleButton
+        android:id="@+id/toggle_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="HPA"
+        android:textOn="INHG"
+        app:layout_constraintStart_toEndOf="@+id/tf_pressure"
+        app:layout_constraintTop_toTopOf="@+id/tf_pressure" />
+
+        <Button
+            android:id="@+id/bt_quit"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/blackCP"
+            android:text="@string/goToHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>

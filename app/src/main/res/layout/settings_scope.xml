@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/orangeCP"
+        android:text="@string/sauvegarder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_lb_zeroDistance" />
+
+    <TextView
+        android:id="@+id/lb_turretUD"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/scope_UD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tf_turretUD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_turretUD" />
+
+    <ToggleButton
+        android:id="@+id/toggle_turretUD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="MOA"
+        android:textOn="MIL"
+        app:layout_constraintStart_toEndOf="@+id/tf_turretUD"
+        app:layout_constraintTop_toTopOf="@+id/tf_turretUD" />
+
+    <TextView
+        android:id="@+id/lb_turretLR"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/scope_LR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_turretUD" />
+
+    <EditText
+        android:id="@+id/tf_turretLR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_turretLR" />
+
+    <ToggleButton
+        android:id="@+id/toggle_turretLR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="MOA"
+        android:textOn="MIL"
+        app:layout_constraintStart_toEndOf="@+id/tf_turretLR"
+        app:layout_constraintTop_toTopOf="@+id/tf_turretLR" />
+
+    <TextView
+        android:id="@+id/lb_scopeHeight"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/scope_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_turretLR" />
+
+    <EditText
+        android:id="@+id/tf_scopeHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="5.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_scopeHeight" />
+
+    <ToggleButton
+        android:id="@+id/toggle_scopeHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="CM"
+        android:textOn="INCH"
+        app:layout_constraintStart_toEndOf="@+id/tf_scopeHeight"
+        app:layout_constraintTop_toTopOf="@+id/tf_scopeHeight" />
+
+    <TextView
+        android:id="@+id/lb_zeroDistance"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/scope_zeroing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_scopeHeight" />
+
+    <EditText
+        android:id="@+id/tf_lb_zeroDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_zeroDistance" />
+
+    <ToggleButton
+        android:id="@+id/toggle_zeroDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="M"
+        android:textOn="YARDS"
+        app:layout_constraintStart_toEndOf="@+id/tf_lb_zeroDistance"
+        app:layout_constraintTop_toTopOf="@+id/tf_lb_zeroDistance" />
+
+    <Button
+        android:id="@+id/bt_quit"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blackCP"
+        android:text="@string/goToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

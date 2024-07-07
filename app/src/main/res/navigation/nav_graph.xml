@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.balistikcalculater.FirstFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/menu_home" >
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_Table"
+            app:destination="@id/CalculateTable" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.balistikcalculater.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second" >
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+    </fragment>
+    <fragment
+        android:id="@+id/SettingsGeneral"
+        android:name="com.example.balistikcalculater.SettingsGeneral"
+        android:label="@string/menu_generalSetting"
+        tools:layout="@layout/settings_general" >
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+        <action
+            android:id="@+id/action_SettingsGeneral_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SettingScope"
+        android:name="com.example.balistikcalculater.SettingScope"
+        android:label="@string/menu_scopeSetting"
+        tools:layout="@layout/settings_scope" >
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+        <action
+            android:id="@+id/action_SettingScope_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SettingRifle"
+        android:name="com.example.balistikcalculater.SettingRifle"
+        android:label="@string/menu_rifleSetting"
+        tools:layout="@layout/settings_rifle" >
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+        <action
+            android:id="@+id/action_SettingsRifle_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SettingWeather"
+        android:name="com.example.balistikcalculater.SettingWeather"
+        android:label="@string/menu_weatherSetting"
+        tools:layout="@layout/settings_weather" >
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+        <action
+            android:id="@+id/action_SettingWeather_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Donate"
+        android:name="com.example.balistikcalculater.Donate"
+        android:label="@string/menu_donate"
+        tools:layout="@layout/settings_donate" >
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+        <action
+            android:id="@+id/action_Donate_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/About"
+        android:name="com.example.balistikcalculater.About"
+        android:label="@string/menu_about"
+        tools:layout="@layout/settings_about" >
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+        <action
+            android:id="@+id/action_About_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CalculateTable"
+        android:name="com.example.balistikcalculater.CalculateTable"
+        android:label="@string/home_table"
+        tools:layout="@layout/settings_about" >
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/SettingsGeneral" />
+        <action
+            android:id="@+id/action_MenuHome_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_MenuHome_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingScope"
+            app:destination="@id/SettingScope" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingRifle"
+            app:destination="@id/SettingRifle" />
+        <action
+            android:id="@+id/action_MenuHome_to_SettingWeather"
+            app:destination="@id/SettingWeather" />
+        <action
+            android:id="@+id/action_About_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

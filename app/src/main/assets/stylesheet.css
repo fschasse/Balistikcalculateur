@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+}
+
+h1 {
+font-size:24px;
+}
+
+a {
+color : #ff8c00;
+}
+
+b {
+color : #ff8c00;
+}
+
+.button_donate {
+text-align:center;
+}
+
+.link {
+text-align:center;
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lb_incrementation"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_incrementation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tf_incrementation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_incrementation" />
+
+    <ToggleButton
+        android:id="@+id/toggle_incrementation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="M"
+        android:textOn="YARDS"
+        app:layout_constraintStart_toEndOf="@+id/tf_incrementation"
+        app:layout_constraintTop_toTopOf="@+id/tf_incrementation" />
+
+    <TextView
+        android:id="@+id/lb_distanceFin"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_endDistance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_incrementation" />
+
+    <EditText
+        android:id="@+id/tf_distanceFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_distanceFin" />
+
+    <ToggleButton
+        android:id="@+id/toggle_ditanceFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="M"
+        android:textOn="YARDS"
+        app:layout_constraintStart_toEndOf="@+id/tf_distanceFin"
+        app:layout_constraintTop_toTopOf="@+id/tf_distanceFin" />
+
+    <TextView
+        android:id="@+id/lb_angle"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_slopeAngle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_distanceFin" />
+
+    <EditText
+        android:id="@+id/tf_angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_angle" />
+
+    <ToggleButton
+        android:id="@+id/toggle_angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="°"
+        android:textOn="°"
+        app:layout_constraintStart_toEndOf="@+id/tf_angle"
+        app:layout_constraintTop_toTopOf="@+id/tf_angle" />
+
+    <TextView
+        android:id="@+id/lb_windSpeed"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_windSpeed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_angle" />
+
+    <EditText
+        android:id="@+id/tf_windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_windSpeed" />
+
+    <ToggleButton
+        android:id="@+id/toggle_windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="KM/H"
+        android:textOn="MILES/H"
+        app:layout_constraintStart_toEndOf="@+id/tf_windSpeed"
+        app:layout_constraintTop_toTopOf="@+id/tf_windSpeed" />
+
+    <TextView
+        android:id="@+id/lb_windAngle"
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_slopeWind"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_windSpeed" />
+
+    <EditText
+        android:id="@+id/tf_windAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_windAngle" />
+
+    <ToggleButton
+        android:id="@+id/toggle_windAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="°"
+        android:textOn="°"
+        app:layout_constraintStart_toEndOf="@+id/tf_windAngle"
+        app:layout_constraintTop_toTopOf="@+id/tf_windAngle" />
+
+    <Button
+        android:id="@+id/bt_table"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/orangeCP"
+        android:text="@string/home_table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_windAngle" />
+
+    <Button
+        android:id="@+id/bt_graph"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/blackCP"
+        android:text="@string/home_graph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_table" />
+</androidx.constraintlayout.widget.ConstraintLayout>
